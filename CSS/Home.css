@@ -1,0 +1,308 @@
+:root{
+	--bg-color: rgba(225, 225, 225, 0.85);
+	--color1: #222222;
+	--color2: #353535;
+	--footer-color: #4e4e4e;
+	--text-color: #fff;
+	--font1:BreeSerif-Regular;
+	--font2:Lato-Regular;
+	--hover-color1: rgb(94, 188, 255);
+	--hover-color2: rgb(0, 98, 255);
+}
+*{
+    box-sizing: border-box;
+    
+}
+.container{
+    width: 1500px;
+    height: auto;
+}
+.header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid;
+}
+.logo>img{
+    width: 200px;
+    height: 95px;
+}
+.nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search{
+	width: 500px;
+	position: relative;
+}
+.search>input{
+    width: 500px;
+    height: 30px;
+    border-radius: 5px;
+}
+.search>i{
+	position: absolute;
+	right: 10px;
+	top: 8px;
+}
+.nav-menu{
+	cursor: pointer;
+}
+
+.nav-menu>ul,li{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0 15px;
+}
+.link-to-another-page{
+	height: 30px;
+	display: flex;
+	
+}
+.nav-menu li i{
+	margin-top: 5px;
+	margin-left: 10px;
+}
+.link-to-another-page:hover{
+	border-bottom-style : solid;
+	border-bottom-color : black;
+	
+}
+.mySlides{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+.section{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*--about-starts--*/
+.about {
+    padding: 5em 0px 4em 0px;
+}
+.about-left img{
+    width: 500px;
+    height: 350px;
+    
+}
+.about-left figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	text-align: center;
+	cursor: pointer;
+	width:100%;
+}
+.about-left figure img {
+	position: relative;
+	display: block;
+}
+.about-left figure figcaption::before,
+.fcol1 figure figcaption::after {
+	pointer-events: none;
+}
+.about-left figure figcaption{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+figure.effect-bubba {
+	background: var(--bg-color);
+    border-radius: 30px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+figure.effect-bubba:hover img {
+	opacity: 0.3;
+}
+figure.effect-bubba h4,figure.effect-bubba h2 {
+	padding-top: 22%;
+	-webkit-transition: transform 0.35s;
+	-moz-transition: transform 0.35s;
+	-o-transition: -o-transform 0.35s;
+	-ms-transition: -ms-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,-20px,0);
+	-moz-transform: translate3d(0,-20px,0);
+	-o-transform: translate3d(0,-20px,0);
+	-ms-transform: translate3d(0,-20px,0);
+	transform: translate3d(0,-20px,0);
+	opacity:0;
+	color:var(--color1);
+	font-size: 1.8em;
+    font-family: var(--font1);
+}
+figure.effect-bubba h4.gal {
+	padding-top: 21%;
+}
+figure.effect-bubba p {
+	padding: 0px 3.5em;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	-moz-transition: opacity 0.35s, -moz-transform 0.35s;
+	-o-transition: opacity 0.35s, -o-transform 0.35s;
+	-ms-transition: opacity 0.35s, -ms-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,20px,0);
+	-moz-transform: translate3d(0,20px,0);
+	-o-transform: translate3d(0,20px,0);
+	-ms-transform: translate3d(0,20px,0);
+	transform: translate3d(0,20px,0);
+	color:var(--color2);
+	font-size: 1em;
+	font-family: var(--font2);
+}
+figure.effect-bubba:hover h4,
+figure.effect-bubba:hover p,figure.effect-bubba:hover h2 {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-o-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+/*--about-end--*/
+.PC{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+	border-top: 1px solid;
+	border-color: var(--bg-color);
+}
+.lap{
+	margin-top: 30px;
+	border-top: 1px solid;
+	border-color: var(--bg-color);
+}
+.top-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+	font-family: var(--font1);
+	align-items: center;
+}
+.show-more{
+	color: black;
+	text-decoration: none;
+}
+.show-more:hover{
+	color:var(--hover-color1);
+	border-bottom-style : solid;
+	border-bottom-color : var(--bg-color);
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+}
+.item>img{
+    width: 300px;
+}
+.product{
+	width: 320px;
+	border: 1px solid;
+	border-color: var(--bg-color);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.img-pro{
+    width: 300px;
+	height: 300px;
+	margin: 10px;
+}
+.product-content{
+	margin: 10px;
+}
+.select-item{
+	margin: 10px;
+	width: 300px;
+	border-radius: 5px;
+	border: none;
+	background-color: black;
+	color: white;
+}
+.product:hover{
+	border-color: black;
+	background-color: black;
+	color: white;
+}
+.product:hover .select-item{
+	background-color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
+}
+.product:active .select-item{
+	background-color: var(--hover-color2);
+	color: white;
+}
+
+.footer{
+	width: 100%;
+	margin-top: 30px;
+	border-top: 1px solid var(--bg-color);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.footer-email{
+    width: 400px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+.footer-email>input{
+    width: 300px;
+    height: 30px;
+    border: none;
+	background-color: var(--bg-color);
+	border-radius: 5px 0 0 5px;
+}
+.footer-email>button{
+    width: 100px;
+    height: 30px;
+    text-align: center;
+	background-color: white;
+	border-radius: 0 5px 5px 0;
+}
+.footer-email>button:hover{
+	background-color: var(--hover-color1);
+	color: white;
+}
+.footer-email>button:active{
+	background-color: var(--hover-color2);
+}
+.info-website{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 50px;
+	background-color: var(--footer-color);
+	color: var(--text-color);
+	border-radius: 0 0 5px 5px;
+}
+.infor-left ul{
+	width: 350px;
+	padding: 0;
+}
+.infor-left li a {
+	color: var(--text-color);
+	text-decoration: none;
+}
+.infor-left a{
+	color: var(--text-color);
+}
+.item{
+	flex-wrap: wrap;
+}

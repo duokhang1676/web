@@ -1,0 +1,105 @@
+:root{
+	--bg-color: rgba(225, 225, 225, 0.85);
+	--color1: #222222;
+	--color2: #353535;
+	--footer-color: #4e4e4e;
+	--text-color: #fff;
+	--font1:BreeSerif-Regular;
+	--font2:Lato-Regular;
+	--hover-color1: rgb(94, 188, 255);
+	--hover-color2: rgb(0, 98, 255);
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    overflow: hidden;
+    background-color: #ffffff;
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+}
+section .color{
+    position: absolute;
+    filter: blur(150px);
+}
+section .color:nth-child(1){
+    top: -350;
+    width: 600px; height: 600px;
+    background-color: #cdcdcd;
+}
+
+section .container{
+    position: relative;
+    width: 400px;
+    min-height: 400px;
+    background-color: rgba(161, 161, 161, 0.1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 55px 55px rgba(0, 0, 0, 0.1);
+}
+section .container form{
+    position: relative;
+    padding: 40px;
+}
+section .container .form h2{
+    position: relative;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-left: 40px;
+}
+section .container .form h2::before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    width: 80px; height: 4px;
+    background: #fff;
+}
+section .container .form .inputBox{
+    width: 100%;
+    margin-top: 10px;
+}
+
+section .container .from .inputBox input{
+    width: 300px;
+    margin-top: 8px;
+    background: var(--bg-color);
+    border: none;
+    outline: none;
+    padding: 13px 20px;
+    border-radius: 35px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: black;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+section .container .from .inputBox input::placeholder{
+    color: #fff;
+}
+section .container .from .inputBox input[type="submit"]{
+    background: #fff;
+    color: var(--color1);
+    max-width: 100px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-top: 8px;
+    font-weight: 600;
+}
+section .container .from .inputBox input[type="submit"]:hover{
+    background-color: var(--color1);
+    color: var(--text-color);
+}
+section .container .from .inputBox input[type="submit"]:active{
+    background-color: var(--text-color);
+    color: var(--color1);
+}
